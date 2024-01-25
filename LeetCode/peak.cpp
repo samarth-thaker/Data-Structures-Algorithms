@@ -23,7 +23,7 @@ using namespace std;
 
 int main(){
     
-    vector<int> arr = {1, 3, 2};
+    vector<int> arr = {1, 3,4, 2};
     int peak = peakIndexInMountainArray(arr);
     cout<<peak;
 
