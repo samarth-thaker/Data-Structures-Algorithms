@@ -19,7 +19,7 @@ void reverse(ListNode*&head, ListNode*curr, ListNode*prev){
     ListNode*forward=curr->next;
     reverse(head, forward, curr);
     curr->next = prev;
-}
+}   
 
 ListNode *reverseList(ListNode *head)
 {
