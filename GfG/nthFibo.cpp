@@ -1,4 +1,5 @@
-
+#includse<iostream>
+using namespace std;
 int nthFibo(int n){
 int a = 0, b = 1, c, i;
     if (n == 0)
@@ -9,4 +10,10 @@ int a = 0, b = 1, c, i;
         b = c;
     }
     return b;
+}
+int main(){
+    int n = 5;
+    int r = nthFibo(n);
+    cout<<r;
+    
 }
