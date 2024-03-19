@@ -23,22 +23,30 @@ public:
 };
 class Solution {
 public:
-int getLength(ListNode*head){
+/* int getLength(ListNode*head){
     int l=0;
     while(head!=NULL){
         l++;
         head = head->next;
     }
     return l;
-}
+} */
     ListNode* middleNode(ListNode* head) {
-    int n = getLength(head);
+  /*   int n = getLength(head);
     int ans = n/2;
     ListNode*temp = head;
     while(ans--){
         temp = temp->next;
 
     }
-    return temp;
+    return temp; */
+     ListNode* fast = head;
+        ListNode* slow = head;
+        if(head!=NULL){
+              while(fast!=NULL && fast->next!=NULL){
+            fast = fast->next->next;
+            slow = slow->next;
+        }
+        }
     }
 };;
