@@ -135,7 +135,16 @@ void buildFromLevelOrder(node* &root) {
     }
  }
 
-
+int height(node*root){
+    if(root==NULL){
+        return 0;
+    }
+    else{
+        int left = height(root->left);
+        int right = height(root->right);
+        return max(left, right) + 1;
+    }
+}
 int main() {
 
     node* root = NULL;
