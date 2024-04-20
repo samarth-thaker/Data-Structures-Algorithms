@@ -1,4 +1,6 @@
-vector<int> findUnion(int arr1[], int arr2[], int n, int m) {
+class Soluiton{
+    public:
+    vector<int> findUnion(int arr1[], int arr2[], int n, int m) {
     vector<int> ans;
     int i = 0, j = 0;
 
@@ -46,3 +48,4 @@ vector<int> findUnion(int arr1[], int arr2[], int n, int m) {
 
     return ans;
 }
+};
