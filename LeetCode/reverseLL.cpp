@@ -41,7 +41,7 @@ ListNode *reverseList(ListNode *head)
     return prev; */
     ListNode*curr = head;
     ListNode*prev = NULL;
-    reverse(head, curr, prev);
+    reverse(head,   curr, prev);
     return head;
 
 }
