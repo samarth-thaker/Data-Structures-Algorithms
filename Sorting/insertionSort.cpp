@@ -29,6 +29,12 @@ void recursiveInserstionSort(int arr[],int i, int n){
     recursiveInserstionSort(arr[], i+1,  n);
 
 }
+ void insertionSort(int arr[], int n)
+    {
+        for(int i=1;i<n;i++){
+        recursiveInserstionSort(arr, i, n);
+    }
+    }
 void printArray(int arr[], int size)
 {
 	int i;
